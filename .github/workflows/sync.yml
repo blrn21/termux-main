@@ -51,4 +51,8 @@ jobs:
         run: apt-mirror aptmirror.list
 
       - name: Commit
-        run: git commit . -m 'Upload'
+        run: |
+          git add .
+          git config --global user.email "pangys@proton.me"
+          git config --global user.name "blrn21"
+          git commit -m 'Upload'
