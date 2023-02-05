@@ -40,3 +40,15 @@ jobs:
 
       - name: Checking available disk-space
         run: df -h
+
+      - name: Update APT repo
+        run: sudo apt update
+
+      - name: Install apt-mirror
+        run: sudo apt install apt-mirror
+
+      - name: Start sync
+        run: apt-mirror aptmirror.list
+
+      - name: Commit
+        run: git commit . -m 'Upload'
