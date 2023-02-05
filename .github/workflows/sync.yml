@@ -54,10 +54,9 @@ jobs:
         run: |
           git remote add origin https://github.com/blrn21/repo
           git add .
-          git commit -m 'Upload'
+          git commit -m "Upload"
           git config --global user.email "pangys@proton.me"
           git config --global user.name "blrn21"
-          git commit -m 'Upload'
        
       - name: Upload
         run: git push -u origin master
