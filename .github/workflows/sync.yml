@@ -47,5 +47,8 @@ jobs:
       - name: Install apt-mirror
         run: sudo apt install apt-mirror
 
-      - name: PWD
-        run: $PWD
+      - name: Start sync
+        run: apt-mirror aptmirror.list
+
+      - name: Commit
+        run: git commit . -m 'Upload'
