@@ -1,4 +1,4 @@
-set base_path         $PWD
+set base_path         /home/runner/work/repo/repo
 set mirror_path       $base_path/mirror
 set skel_path         $base_path/skel
 set var_path          $base_path/var
@@ -18,8 +18,8 @@ set proxy_password    password
 # Main Termux repository
 deb-aarch64           https://packages.termux.dev/apt/termux-main stable main
 deb-arm               https://packages.termux.dev/apt/termux-main stable main
-deb-i686              https://packages.termux.dev/apt/termux-main stable main
-deb-x86_64            https://packages.termux.dev/apt/termux-main stable main
+#deb-i686              https://packages.termux.dev/apt/termux-main stable main
+#deb-x86_64            https://packages.termux.dev/apt/termux-main stable main
 clean                 https://packages.termux.dev/apt/termux-main
 
 # root repository
@@ -32,6 +32,6 @@ clean                 https://packages.termux.dev/apt/termux-main
 # x11 repository
 deb-aarch64           https://packages.termux.dev/apt/termux-x11 x11 main
 deb-arm               https://packages.termux.dev/apt/termux-x11 x11 main
-deb-i686              https://packages.termux.dev/apt/termux-x11 x11 main
-deb-x86_64            https://packages.termux.dev/apt/termux-x11 x11 main
+#deb-i686              https://packages.termux.dev/apt/termux-x11 x11 main
+#deb-x86_64            https://packages.termux.dev/apt/termux-x11 x11 main
 clean                 https://packages.termux.dev/apt/termux-x11
