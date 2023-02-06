@@ -1,4 +1,4 @@
-set base_path         /home/runner/work/repo/termux-main
+set base_path         /home/runner/work/termux-main/termux-main
 set mirror_path       $base_path/mirror
 set skel_path         $base_path/skel
 set var_path          $base_path/var
@@ -6,7 +6,7 @@ set postmirror_script $var_path/postmirror.sh
 set defaultarch       aarch64
 set run_postmirror    0
 set nthreads          25
-set limit_rate        900m
+set limit_rate        9000m
 set _tilde            0
 # Use --unlink with wget (for use with hardlinked directories)
 set unlink            0
