@@ -62,22 +62,6 @@ jobs:
           git commit -m "Upload"
        
       - name: Separate push
-        run: |
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main^300:main
-          git push origin main
-
+        run: bash git.sh
 
 
