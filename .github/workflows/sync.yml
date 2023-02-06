@@ -54,6 +54,9 @@ jobs:
       - name: Change git buffer
         run: git config --global http.postBuffer 524288000
 
+      - name: Switch to HTTP
+        run: git remote add origin http://github.com/blrn21/termux-main.git
+
       - name: Commit
         run: |
           git config --global user.email 'pangys@proton.me'
@@ -61,7 +64,5 @@ jobs:
           git add .
           git commit -m "Upload"
        
-      - name: Separate push
-        run: bash git.sh
-
-
+      - name: Push
+        run: GIT_CURL_VERBOSE=1 git push -u origin main
