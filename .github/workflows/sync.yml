@@ -3,8 +3,6 @@ name: CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -49,6 +47,9 @@ jobs:
 
       - name: Start sync
         run: apt-mirror aptmirror.list
+
+      - name: Change git buffer
+        run: git config --global http.postBuffer 157286400
 
       - name: Commit
         run: |
