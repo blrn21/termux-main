@@ -52,10 +52,10 @@ jobs:
 
       - name: Commit
         run: |
-          git add .
-          git commit -m "Upload"
           git config --global user.email "pangys@proton.me"
           git config --global user.name "blrn21"
+          git add .
+          git commit -m "Upload"
        
       - name: Upload
         run: git push -u origin master
