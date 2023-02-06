@@ -52,8 +52,8 @@ jobs:
 
       - name: Commit
         run: |
-          git config --global user.email "pangys@proton.me"
-          git config --global user.name "blrn21"
+          git config --global user.email 'pangys@proton.me'
+          git config --global user.name 'blrn21'
           git add .
           git commit -m "Upload"
        
