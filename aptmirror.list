@@ -21,17 +21,3 @@ deb-arm               https://packages.termux.dev/apt/termux-main stable main
 #deb-i686              https://packages.termux.dev/apt/termux-main stable main
 #deb-x86_64            https://packages.termux.dev/apt/termux-main stable main
 clean                 https://packages.termux.dev/apt/termux-main
-
-# root repository
-#deb-aarch64           https://packages.termux.dev/apt/termux-root root stable
-#deb-arm               https://packages.termux.dev/apt/termux-root root stable
-#deb-i686              https://packages.termux.dev/apt/termux-root root stable
-#deb-x86_64            https://packages.termux.dev/apt/termux-root root stable
-#clean                 https://packages.termux.dev/apt/termux-root
-
-# x11 repository
-deb-aarch64           https://packages.termux.dev/apt/termux-x11 x11 main
-deb-arm               https://packages.termux.dev/apt/termux-x11 x11 main
-#deb-i686              https://packages.termux.dev/apt/termux-x11 x11 main
-#deb-x86_64            https://packages.termux.dev/apt/termux-x11 x11 main
-clean                 https://packages.termux.dev/apt/termux-x11
