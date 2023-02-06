@@ -61,5 +61,23 @@ jobs:
           git add .
           git commit -m "Upload"
        
-      - name: Upload
-        run: git push -u origin main
+      - name: Separate push
+        run: |
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main^300:main
+          git push origin main
+
+
+
