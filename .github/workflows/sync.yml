@@ -36,6 +36,9 @@ jobs:
       - name: Reclaiming disk space
         run: sudo rm -rf /mnt/cache/*
 
+      - name: Checking directory
+        run: $PWD
+
       - name: Checking available disk-space
         run: df -h
 
